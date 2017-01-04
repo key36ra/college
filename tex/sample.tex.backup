@@ -1,0 +1,20 @@
+\documentclass[11pt,a4j]{jsarticle}
+\title{マイクロ波の実験｝
+\author{1413176 三村幸祐}
+\date{2016/05/19 \, 2016/05/26}
+\usepackage{booktabs}
+
+\begin{document}
+ 
+ \begin{table}[htb]
+  \begin{center}
+    \caption{}
+    \begin{tabular}{ccc} \toprule
+
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+ 
+ 
+\end{document}

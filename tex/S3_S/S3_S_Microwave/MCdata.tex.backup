@@ -1,0 +1,73 @@
+\documentclass[11pt,a4j]{jarticle}
+\title{マイクロ波の実験｝
+\author{1413176 三村幸祐}
+\date{2016/05/19 \, 2016/05/26}
+\include{
+
+\begin{document}
+ 
+ \begin{table}[htb]
+  \begin{center}
+    \caption{マンガニン線抵抗器の実験値}
+    \begin{tabular}{ccc} \toprule
+T/℃	&	Vs/mV	&	Vx/mV	&	I/mA	&	Rs/オーム	&	Rx/Ω
+60	&	99.075	&	99.202	&	1	&	99.075	&	99.202
+55	&	99.078	&	99.219	&	1	&	99.078	&	99.219
+50	&	99.077	&	99.227	&	1	&	99.077	&	99.227
+45	&	99.077	&	99.236	&	1	&	99.077	&	99.236
+40	&	99.077	&	99.245	&	1	&	99.077	&	99.245
+35	&	99.077	&	99.252	&	1	&	99.077	&	99.252
+30	&	99.078	&	99.258	&	1	&	99.078	&	99.258
+25	&	99.08	&	99.262	&	1	&	99.08	&	99.262
+20	&	99.079	&	99.263	&	1	&	99.079	&	99.263
+15	&	99.08	&	99.262	&	1	&	99.08	&	99.262
+10	&	99.08	&	99.257	&	1	&	99.08	&	99.257
+5	&	99.081	&	99.251	&	1	&	99.081	&	99.251
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+ \begin{table}[htb]
+  \begin{center}
+    \caption{白金箔膜抵抗器の実験値}
+    \begin{tabular}{ccc} \toprule
+
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+ \begin{table}[htb]
+  \begin{center}
+    \caption{炭素皮膜抵抗器の実験値}
+    \begin{tabular}{ccc} \toprule
+
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+ \begin{table}[htb]
+  \begin{center}
+    \caption{金属皮膜抵抗器の実験値}
+    \begin{tabular}{ccc} \toprule
+
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+ \begin{table}[htb]
+  \begin{center}
+    \caption{銅線の実験値}
+    \begin{tabular}{ccc} \toprule
+
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+
+ 
+\end{document}

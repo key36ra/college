@@ -1,0 +1,33 @@
+\documentclass[11pt,a4j]{jsarticle}
+\title{表と図の挿入}
+\author{1413176 三村幸祐}
+\date{}
+\usepackage{booktabs}
+
+\begin{document}
+ 
+ 
+ % 表テンプレ
+ \begin{table}[htb]
+  \begin{center}
+    \caption{}
+    \begin{tabular}{ccccc} \toprule
+
+    \end{tabular}
+    \label{}
+  \end{center}
+\end{table}
+ 
+ 
+ % 図テンプレ
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{}
+  \caption{}
+  \label{}
+ \end{figure}%
+ 
+ % 文中で図、表を参照する場合は\ref{label名}
+ \ref{}
+ 
+\end{document}

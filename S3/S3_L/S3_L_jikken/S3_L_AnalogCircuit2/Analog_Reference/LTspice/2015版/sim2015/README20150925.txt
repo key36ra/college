@@ -1,0 +1,51 @@
+================================================
+README: sim2015フォルダについて
+================================================
+
+Written by K. Sakamoto in UEC
+
+
+
+このフォルダには、
+LTspice用ファイルがあります。
+
+Analog2の実験結果の理解を深めるために
+回路シミュレーションを実行してください。
+
+利点は、
+1)Diode、OPアンプなどの部品を変更
+2)SPICEパラメーターを直接変更
+以上の操作により、
+出力波形への影響を考察できる。
+
+LTspiceの基本操作は、検索してください。
+
+
+*Folderについて
+Fig17: Level-shifter
+Fig18: limiter circuit without Op-Amp
+Fig19: limiter circuit without Op-Amp
+Fig20: limiter circuit with Op-Amp
+Fig21: limiter circuit with Op-Amp
+Fig22: Comparator for DC characterization
+Fig23: Comparator for AC characterization
+Fig23Noise: Comparator with Noise signal
+Fig26: Absolute circuit 
+Fig27: Absolute circuit 
+
+library: SPICEモデル,信号源用のファイル
+
+使用ソフト：LTspice
+
+公式サイトからダウンロードしてください。
+
+
+((注意))
+このフォルダの中身には、
+自由に配布できないファイル、
+公開できないファイルが存在します。
+
+自由配布およびWed公開できません。
+
+Log:
+Date:2015.09.25 update

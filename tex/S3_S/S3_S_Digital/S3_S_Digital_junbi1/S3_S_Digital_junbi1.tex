@@ -1,0 +1,91 @@
+\documentclass[11pt,a4j]{jsarticle}
+\title{デジタルの準備課題1}
+\author{1413176 三村幸祐}
+\date{}
+\usepackage{booktabs}
+
+\begin{document}
+ 
+ \section{準備課題1-1}
+ 
+ 
+ \begin{table}[htb]
+  \begin{center}
+    \caption{スイッチ操作とLEDの点滅の予測}
+    \begin{tabular}{ccccccccccccccc} \toprule
+SW0 & SW1 & P31 & P33 & A & B & X & P35 & LEDR2 & Y & P37 & LEDR3 & Z & P39 & LEDR4 \\ \midrule
+on & on & H & H & 1 & 1 & 1 & H & 点 & 1 & H & 点 & 0 & L & 滅 \\
+on & off & H & L & 1 & 0 & 0 & L & 滅 & 1 & H & 点 & 1 & H & 点 \\
+off & on & L & H & 0 & 1 & 0 & L & 滅 & 1 & H & 点 & 1 & H & 点 \\
+off & off & L & L & 0 & 1 & 0 & L & 滅 & 0 & L & 滅 & 0 & L & 滅 \\ \bottomrule
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+
+ \section{準備課題1-2}
+ 
+ \begin{eqnarray}
+  V_H &=& R i + \frac{q}{C} \nonumber \\
+      &=& R \frac{d}{dt} q + \frac{1}{C} q \nonumber \\
+  (\frac{d}{dt} + \frac{1}{RC}) q &=& \frac{V_H}{R} \nonumber \\
+  q &=& CV_H + A e^{-\frac{1}{RC}t} (Aは任意の実数) \nonumber \\
+  && q(0) = 0 より、 \nonumber \\
+  q(0) &=& CV_H + A \nonumber \\
+  A &=& -CV_H \nonumber \\
+  q(t) &=& CV_H (1-e^{-\frac{1}{RC}t}) \nonumber \\ \nonumber \\
+  V_2(t) &=& \frac{q(t)}{C} \nonumber \\
+         &=& V_H (1-e^{-\frac{1}{RC}t}) \nonumber \\ \nonumber \\
+  && V_2(t)=V_{TH} = 1.8Vの時、 \nonumber \\
+  t &=& 0.788 \mu s \nonumber
+ \end{eqnarray}
+
+ \newpage
+ 
+ \section{準備課題1-3}
+ 
+ 
+ \begin{table}[htb]
+  \begin{center}
+    \caption{全加算回路の真理値表}
+    \begin{tabular}{ccccc} \toprule
+A & B & $C_{IN}$ & S & $C_{OUT}$ \\ \midrule
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\ \bottomrule
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+ 
+ 
+ \section{準備課題2-1}
+ 
+ 
+ \begin{table}[htb]
+  \begin{center}
+    \caption{RSフリップフロップの動作予測表}
+    \begin{tabular}{ccccc} \toprule
+R & S & $Q_(前)$ & $Q_(現)$ & $Q_(現)$ \\ midrule
+0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 \\
+0 & 0 & 1 & 1 & 0 \\
+1 & 0 & 1 & 1 & 0 \\
+1 & 1 & 1 & 1 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
+0 & 0 & 0 & 0 & 1 \\
+1 & 1 & 0 & 1 & 1 \\ \bottomrule
+    \end{tabular}
+    \label{tab:price}
+  \end{center}
+\end{table}
+ 
+ 
+ 
+ 
+\end{document}
