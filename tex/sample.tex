@@ -16,7 +16,7 @@
     \end{tabular}
     \label{}
   \end{center}
-\end{table}
+ \end{table}
  
  
  % 図テンプレ
@@ -29,5 +29,50 @@
  
  % 文中で図、表を参照する場合は\ref{label名}
  \ref{}
+ 
+ 
+ 
+ % マイクロプロセッサー、実験課題1の表
+  \begin{table}[htb]
+  \begin{center}
+    \caption{}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
+課題 & \multicolumn{2}{|c|}{入力A} & \multicolumn{2}{|c|}{入力B} & \multicolumn{2}{|c|}{演算出力} & 桁上がり & 桁借り\\
+ & \multicolumn{2}{|c|}{(A7～A0)} & \multicolumn{2}{|c|}{(B7～B0)} & \multicolumn{2}{|c|}{(07～O0)} & (Cout) & (Bout) \\ \cline{2-7}
+番号 & 2進表示 & 10進表示 & 2進表示 & 10進表示 & 2進表示 & 10進表示 & キャリー & ボロー \\ \hline
+ &  &  &  &  &  &  & 0 &  \\ \cline{2-8}
+ &  &  &  &  &  &  & 0 & × \\ \cline{2-8}
+ &  &  &  &  &  &  & 0 &  \\ \hline
+ &  &  &  &  &  &  &  & 0 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  & × & 0 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  &  & 0 \\ \hline
+ &  &  &  &  &  &  & 1 &  \\ \cline{2-8}
+ &  &  &  &  &  &  & 1 & × \\ \cline{2-8}
+ &  &  &  &  &  &  & 1 &  \\ \hline
+ &  &  &  &  &  &  &  & 1 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  & × & 1 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  &  & 1 \\ \hline
+ &  &  &  &  &  &  & 0 &  \\ \cline{2-8}
+ &  &  &  &  &  &  & 1 & × \\ \cline{2-8}
+ &  &  &  &  &  &  & 0 &  \\ \hline
+ &  &  &  &  &  &  &  & 0 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  & × & 0 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  &  & 1 \\ \hline
+ &  &  &  &  &  &  & 0 &  \\ \cline{2-8}
+ &  &  &  &  &  &  & 1 & × \\ \cline{2-8}
+ &  &  &  &  &  &  & 1 &  \\ \hline
+ &  &  &  &  &  &  &  & 0 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  & × & 1 \\ \cline{2-7}\cline{9-9}
+ &  &  &  &  &  &  &  & 1 \\ \hline
+ &  &  &  &  &  &  &  &  \\ \cline{2-7}
+ &  &  &  &  &  &  & × & × \\ \cline{2-7}
+ &  &  &  &  &  &  &  &  \\ \hline
+ &  &  &  &  &  &  &  &  \\ \cline{2-7}
+ &  &  &  &  &  &  & × & × \\ \cline{2-7}
+ &  &  &  &  &  &  &  &  \\ \hline
+    \end{tabular}
+    \label{}
+  \end{center}
+ \end{table}
  
 \end{document}
