@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2015/dev/Debian) (preloaded format=platex 2016.11.3)  8 JAN 2017 05:48
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2015/dev/Debian) (preloaded format=platex 2016.11.3)  9 JAN 2017 00:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -86,7 +86,20 @@ eX Live/ChoF)
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(./S3_L_Microprocessor_1.aux)
+(./S3_L_Microprocessor_1.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `S3_L_Microprocessor_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -114,44 +127,87 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 46.
+(Font)              scaled to size 11.53198pt on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 46.
+(Font)              scaled to size 11.53198pt on input line 33.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
+(Font)              <5> on input line 44.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 47.
+(Font)              scaled to size 6.72699pt on input line 44.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 47.
+(Font)              scaled to size 4.805pt on input line 44.
+ [1
 
-Overfull \hbox (30.17776pt too wide) in paragraph at lines 47--83
+]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 66.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 66.
+
+Overfull \hbox (7.87393pt too wide) in paragraph at lines 66--67
+[]\OT1/cmr/m/n/10 Quartus2 \JY1/mc/m/n/10 で \OT1/cmr/m/n/10 HALF\OT1/cmtt/m/n/
+10 _\OT1/cmr/m/n/10 ADDER(\JY1/mc/m/n/10 半加算器\OT1/cmr/m/n/10 ),FULL\OT1/cmt
+t/m/n/10 _\OT1/cmr/m/n/10 ADDER(\JY1/mc/m/n/10 全加算器\OT1/cmr/m/n/10 ),8bit\O
+T1/cmtt/m/n/10 _\OT1/cmr/m/n/10 FULL\OT1/cmtt/m/n/10 _\OT1/cmr/m/n/10 ADDER(8
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 87.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 87.
+
+Overfull \hbox (45.17781pt too wide) in paragraph at lines 88--124
  [] 
  []
 
 
-Overfull \hbox (30.17776pt too wide) in paragraph at lines 92--128
+Overfull \hbox (40.1778pt too wide) in paragraph at lines 134--170
  [] 
  []
 
-[1
+[2] [3] [4] [5
 
-] [2] [3] (./S3_L_Microprocessor_1.aux) ) 
+]
+File: 3-a.png Graphic file (type bmp)
+ <3-a.png> [6]
+File: 3-b.png Graphic file (type bmp)
+ <3-b.png> [7]
+File: 3-c.png Graphic file (type bmp)
+ <3-c.png> [8
+
+]
+File: 3-d.png Graphic file (type bmp)
+ <3-d.png> [9
+
+]
+File: 3-e.png Graphic file (type bmp)
+
+<3-e.png> [10
+
+] [11] (./S3_L_Microprocessor_1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 805 strings out of 494934
- 9530 string characters out of 6180149
- 111695 words of memory out of 5000000
- 4208 multiletter control sequences out of 15000+600000
- 10311 words of font info for 47 fonts, out of 8000000 for 9000
+ 835 strings out of 494934
+ 9827 string characters out of 6180149
+ 112695 words of memory out of 5000000
+ 4224 multiletter control sequences out of 15000+600000
+ 12232 words of font info for 57 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 25i,8n,21p,243b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,8n,21p,334b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on S3_L_Microprocessor_1.dvi (3 pages, 20744 bytes).
+Output written on S3_L_Microprocessor_1.dvi (11 pages, 37948 bytes).
