@@ -18,9 +18,11 @@
   
   しかし、その他の非線形の演算を行う場合これらの知識では足りない。それを補うのが今回の実験の目的であり、リミッタ回路による出力のデジタル表現、ヒステリシスコンパレータによる可逆性の入出力循環変化、絶対値回路による閾値付近の性質変化による線形の折れ曲がり、などによって主に入出力特性が折れ線で表現される非線形信号処理について理解する。
   
-  
+  %レベルシフタ
  \section{レベルシフタ}
   \subsection{原理}
+   
+   今回使用するレベルシフタの回路を図\ref{fig:levelshifter}に示す。
    
    \begin{figure}[htbp]
   \centering
@@ -30,6 +32,11 @@
  \end{figure}%
    
   \subsection{測定手順}
+   ここでは、以降の実験で正電源から正負の入力を得る入力変換装置として用いるレベルシフタ回路を設計し、その挙動を検証。
+   \begin{enumerate}
+   \item 図\ref{fig:levelshifter}の回路を設計。
+   \item 回路中の$V_i$に0～12Vの電圧を加え、その出力$V_o$の挙動を計測。
+   \end{enumerate}
    
    
   \subsection{結果と考察}
@@ -42,6 +49,9 @@
   \label{fig:1_0}
  \end{figure}%
    
+   \clearpage
+   
+   %リミッタ
  \section{リミッタ}
   \subsection{オペアンプを用いないリミッタの入出力特性}
    \subsubsection{原理}
@@ -54,7 +64,11 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    直流電源について、リミッタ回路を用いて整流作用の動作を確認。
+    \begin{enumerate}
+    \item 図\ref{fig:noamp_tokusei}を設計。
+    \item レベルシフタによる変換後の入力$V_i$を(-4V～+4V)の範囲で変動させながら、出力$V_o$を測定。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     図\ref{fig:1_1_noamp_PS}にオペアンプを用いないリミッタの入出力特性を示す。
@@ -85,7 +99,11 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    交流電源について、リミッタ回路の整流作用を検証。
+    \begin{enumerate}
+    \item 図\ref{fig:noamp_wave}の回路を設計。
+    \item 交流電源を波形(ex.正弦波、三角波)、振幅、周波数などによって変動させ、それぞれの入力に対してその出力波形を観測。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     
@@ -130,7 +148,11 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    オペアンプを用いたリミッタ回路について、直流電源に対する挙動を測定。
+    \begin{enumerate}
+    \item 図\ref{fig:amp_tokusei}の回路を設計。
+    \item $V_i$を-4Vから+4Vまで変動させ、その出力を測定。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     次の図\ref{fig:1_1_amp_PS_ViVo}、図\ref{fig:1_1_amp_PS_ViVa}にそれぞれ入力電圧に対するリミッタの出力、そしてオペアンプの出力電圧特性を示した。
@@ -170,7 +192,11 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    オペアンプを用いたリミッタ回路について、交流電源に対する出力波形を観測。
+    \begin{enumerate}
+    \item 図\ref{fig:amp_wave}の回路を設計。
+    \item 交流電源を波形(ex.正弦波、三角波)、振幅、周波数などによって変動させ、それぞれの入力に対してその出力波形を観測。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     図\ref{fig:ampFGf1v2vivo},\ref{fig:ampFGf1v2viva}に正弦波で周波数1kHzの入力に対するデータを、図\ref{fig:ampFGf1v4vivo},\ref{fig:ampFGf1v4viva}に三角波で周波数1kHzの入力に対するデータを、そして最後の図\ref{fig:ampFGf100v4}に正弦波で周波数1kHzの入力に対するデータを示す。
@@ -213,8 +239,9 @@
  \end{figure}%
   
   
+  \clearpage
     
-  
+  %ヒステリシスコンパレータ回路
  \section{ヒステリシスコンパレータ回路}
   \subsection{ヒステリシスコンパレータの入出力特性}
    \subsubsection{原理}
@@ -227,7 +254,11 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    PS出力電圧$V_{th}$、コンパレータ入力電圧$V_i$に対する、ヒステリシスコンパレータの特性を測定。
+    \begin{enumerate}
+    \item 図\ref{fig:histeri_tokusei}の回路を設計。
+    \item PS出力電圧$V_{th}$、コンパレータ入力電圧$V_i$を変動させ、コンパレータ出力$V_o$を測定。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     PS出力電圧$V_{th}$を2V,1Vとして測定したヒステリシスのデータをそれぞれ図\ref{fig:1_2_histeri_Vth2},図\ref{fig:1_2_histeri_Vth1}に示す。
@@ -259,11 +290,88 @@
  \end{figure}%
     
    \subsubsection{測定手順}
+    図\ref{fig:histeri_wave}の回路を設計。その後、以下の基本波形・模擬ノイズ波形観測について測定。
     
+    基本波形について。
+    \begin{enumerate}
+    \item 図\ref{fig:histeri_wave}の$P_0$を$P_2$に接続。
+    \item PS出力電圧$V_{th}$、波形(ex.正弦波、三角波)、周波数、振幅による波形の変動を観測。
+    \end{enumerate}
+    
+    模擬ノイズ波形観測について。
+    \begin{enumerate}
+    \item 図\ref{fig:histeri_wave}の$P_0$を$P_2$に接続。
+    \item 波形を模擬ノイズ重畳波形に設定。正弦波6V$_{pp}$(入力)+三角波1V$_{pp}$(ノイズ)、正弦波6V$_{pp}$(入力)+三角波4V$_{pp}$(ノイズ)について測定。
+    \item 図\ref{fig:histeri_wave}の$P_0$を$P_1$に接続を変更。これによりヒステリシスから通常のコンパレータ回路となる。
+    \item 通常コンパレータについて、2の操作を同様に行う。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
     
+    図\ref{fig:histeri_2-1}～\ref{fig:histeri_1-1}には基本波形観測の波形データを、図\ref{fig:noise_before_6-1_big}～\ref{fig:noise_after_6-1_small}にはノイズ波形観測の波形データをそれぞれ示す。
     
+    \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_histeri_Vth2f1V6sankaku_ViVo.png}
+  \caption{ヒステリシスコンパレータの波形観測(三角波、PS=2V、振幅$V_{pp}$=6V、周波数1kHz)}
+  \label{fig:histeri_2-1}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_histeri_Vth2f10V6sankaku_ViVo.png}
+  \caption{ヒステリシスコンパレータの波形観測(三角波、PS=2V、振幅$V_{pp}$=6V、周波数10kHz)}
+  \label{fig:histeri_2-10}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_histeri_Vth1f1V6sankaku_ViVo.png}
+  \caption{ヒステリシスコンパレータの波形観測(三角波、PS=1V、振幅$V_{pp}$=6V、周波数1kHz)}
+  \label{fig:histeri_1-1}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_noise_before_6-1_BigScale.png}
+  \caption{ヒステリシスコンパレータの入力・ノイズ波形(正弦波6V$_{pp}$(入力)+三角波1V$_{pp}$(ノイズ))(縮小スケール)}
+  \label{fig:noise_before_6-1_big}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_noise_before_6-4_BigScale}
+  \caption{ヒステリシスコンパレータの入力・ノイズ波形(正弦波6V$_{pp}$(入力)+三角波4V$_{pp}$(ノイズ))(縮小スケール)}
+  \label{fig:noise_before_6-4_big}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_noise_before_6-4_SmallScale.png}
+  \caption{ヒステリシスコンパレータの入力・ノイズ波形(正弦波6V$_{pp}$(入力)+三角波4V$_{pp}$(ノイズ))(拡大スケール)}
+  \label{fig:noise_before_6-4_small}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_noise_after_6-1_BigScale.png}
+  \caption{通常コンパレータの入力・ノイズ波形(正弦波6V$_{pp}$(入力)+三角波1V$_{pp}$(ノイズ))(縮小スケール)}
+  \label{fig:noise_after_6-1_big}
+ \end{figure}
+ 
+ \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{1_2_noise_after_6-1_SmallScale.png}
+  \caption{通常コンパレータの入力・ノイズ波形(正弦波6V$_{pp}$(入力)+三角波1V$_{pp}$(ノイズ))(拡大スケール)}
+  \label{fig:noise_after_6-1_small}
+ \end{figure}
+    
+    
+    
+    
+    \clearpage
+    
+    %絶対値回路
  \section{絶対値回路}
   \subsection{絶対値回路の入出力特性}
    \subsubsection{原理}
@@ -276,9 +384,15 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    絶対値回路について、直流電源に対して全波整流の挙動を測定。
+    \begin{enumerate}
+    \item 図\ref{fig:abs_tokusei}の回路を設計。
+    \item 基準電圧$V_r$、入力電圧$V_i$を変動させ出力電圧$V_o$の挙動を測定。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
+    
+    図\ref{fig:2_Vr0}、\ref{fig:2_Vr1}にはそれぞれ基準電圧が0Vと1Vのときの絶対値回路の直流電源に対する入出力特性データを示す。
     
     \begin{figure}[htbp]
   \centering
@@ -307,9 +421,15 @@
  \end{figure}%
     
    \subsubsection{測定手順}
-    
+    絶対値回路について、交流電源に対する全波整流作用を観測。
+    \begin{enumerate}
+    \item 図\ref{fig:abs_wave}の回路を設計。
+    \item 基準電圧$V_r$、入力周波数、振幅、波形(ex.正弦波、三角波)による出力の変動を測定。
+    \end{enumerate}
     
    \subsubsection{結果と考察}
+    
+    図\ref{fig:2_Vr0_sin}～\ref{fig:2_Vr1_4}に基準電圧と振幅、波形によりそれぞれ場合分けして観測した波形データを示す。
     
     \begin{figure}[htbp]
   \centering
@@ -341,9 +461,14 @@
   \label{fig:2_Vr1_4}
  \end{figure}%
   
+  
+  \clearpage
+  
+  %レポート課題
  \section{レポート課題} 
   
   
+  %参考文献
  \section{参考文献}
   
   

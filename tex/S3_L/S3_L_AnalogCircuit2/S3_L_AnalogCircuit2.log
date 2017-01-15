@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2015/dev/Debian) (preloaded format=platex 2016.11.3)  4 DEC 2016 21:54
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2015/dev/Debian) (preloaded format=platex 2016.11.3)  15 JAN 2017 21:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -124,40 +124,44 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: levelshifter.png Graphic file (type bmp)
  <levelshifter.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 28.
+(Font)              scaled to size 8.64899pt on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 28.
-File: 1_0.png Graphic file (type bmp)
- <1_0.png> [1
+(Font)              scaled to size 8.64899pt on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 38.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 38.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 38.
+ [1
 
 ]
+File: 1_0.png Graphic file (type bmp)
+ <1_0.png> [2]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 47.
+(Font)              scaled to size 9.60999pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 47.
+(Font)              scaled to size 9.60999pt on input line 57.
 File: noamp_tokusei.png Graphic file (type bmp)
 
-<noamp_tokusei.png> [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+<noamp_tokusei.png>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 63.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 63.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 63.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
 File: 1_1_noamp_PS.png Graphic file (type bmp)
- <1_1_noamp_PS.png>
+
+<1_1_noamp_PS.png> [3
+
+]
 File: noamp_wave.png Graphic file (type bmp)
- <noamp_wave.png>
+ <noamp_wave.png> [4]
 File: 1_1_noampFG_f1V2_ViVo.png Graphic file (type bmp)
- <1_1_noampFG_f1V2_ViVo.png> [3]
+ <1_1_noampFG_f1V2_ViVo.png>
 File: 1_1_noampFG_f1V4sankaku_ViVo.png Graphic file (type bmp)
 
 <1_1_noampFG_f1V4sankaku_ViVo.png>
@@ -165,14 +169,14 @@ File: 1_1_noampFG_f100V4_ViVo.png Graphic file (type bmp)
  <1_1_noampFG_f100V4_ViVo.png>
 File: amp_tokusei.png Graphic file (type bmp)
 
-<amp_tokusei.png> [4] [5]
+<amp_tokusei.png> [5] [6]
 File: 1_1_amp_PS_ViVo.png Graphic file (type bmp)
  <1_1_amp_PS_ViVo.png>
 File: 1_1_amp_PS_ViVa.png Graphic file (type bmp)
  <1_1_amp_PS_ViVa.png>
 File: amp_wave.png Graphic file (type bmp)
 
-<amp_wave.png> [6] [7]
+<amp_wave.png> [7]
 File: 1_1_ampFG_f1V2_ViVo.png Graphic file (type bmp)
  <1_1_ampFG_f1V2_ViVo.png>
 File: 1_1_ampFG_f1V2_ViVa.png Graphic file (type bmp)
@@ -184,33 +188,58 @@ File: 1_1_ampFG_f1V4sankaku_ViVa.png Graphic file (type bmp)
  <1_1_ampFG_f1V4sankaku_ViVa.png>
 File: 1_1_ampFG_f100V4_ViVo.png Graphic file (type bmp)
 
-<1_1_ampFG_f100V4_ViVo.png>
+<1_1_ampFG_f100V4_ViVo.png> [8] [9] [10] [11]
 File: histeri_tokusei.png Graphic file (type bmp)
  <histeri_tokusei.png>
 File: 1_2_histeri_Vth2.png Graphic file (type bmp)
- <1_2_histeri_Vth2.png>
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 238.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 238.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 238.
-File: 1_2_histeri_Vth1.png Graphic file (type bmp)
 
-<1_2_histeri_Vth1.png>
+<1_2_histeri_Vth2.png>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 269.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 269.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 269.
+File: 1_2_histeri_Vth1.png Graphic file (type bmp)
+ <1_2_histeri_Vth1.png>
 File: histeri_wave.png Graphic file (type bmp)
- <histeri_wave.png>
+ <histeri_wave.png> [12
+
+] [13]
+File: 1_2_histeri_Vth2f1V6sankaku_ViVo.png Graphic file (type bmp)
+
+<1_2_histeri_Vth2f1V6sankaku_ViVo.png>
+File: 1_2_histeri_Vth2f10V6sankaku_ViVo.png Graphic file (type bmp)
+ <1_2_histeri_Vth2f10V6sankaku_ViVo.png>
+File: 1_2_histeri_Vth1f1V6sankaku_ViVo.png Graphic file (type bmp)
+
+<1_2_histeri_Vth1f1V6sankaku_ViVo.png>
+File: 1_2_noise_before_6-1_BigScale.png Graphic file (type bmp)
+ <1_2_noise_before_6-1_BigScale.png>
+File: 1_2_noise_before_6-4_BigScale.png Graphic file (type bmp)
+
+<1_2_noise_before_6-4_BigScale.png>
+File: 1_2_noise_before_6-4_SmallScale.png Graphic file (type bmp)
+ <1_2_noise_before_6-4_SmallScale.png>
+File: 1_2_noise_after_6-1_BigScale.png Graphic file (type bmp)
+
+<1_2_noise_after_6-1_BigScale.png>
+File: 1_2_noise_after_6-1_SmallScale.png Graphic file (type bmp)
+ <1_2_noise_after_6-1_SmallScale.png>
+[14] [15] [16] [17] [18]
 File: abs_tokusei.png Graphic file (type bmp)
- <abs_tokusei.png> [8] [9] [10]
-[11]
+ <abs_tokusei.png>
 File: 2_Vr0.png Graphic file (type bmp)
- <2_Vr0.png> [12]
+ <2_Vr0.png>
 File: 2_Vr1.png Graphic file (type bmp)
  <2_Vr1.png>
 File: abs_wave.png Graphic file (type bmp)
- <abs_wave.png>
+
+<abs_wave.png>
 File: 2_abs_Vr0_f10V4sin_ViVo.png Graphic file (type bmp)
- <2_abs_Vr0_f10V4sin_ViVo.png>
+ <2_abs_Vr0_f10V4sin_ViVo.png> [19
+
+] [20]
 File: 2_abs_Vr0_f1V4sankaku_ViVo.png Graphic file (type bmp)
 
 <2_abs_Vr0_f1V4sankaku_ViVo.png>
@@ -218,14 +247,16 @@ File: 2_abs_Vr1_f1V2sin_ViVo.png Graphic file (type bmp)
  <2_abs_Vr1_f1V2sin_ViVo.png>
 File: 2_abs_Vr1_f1V4sin_ViVo.png Graphic file (type bmp)
 
-<2_abs_Vr1_f1V4sin_ViVo.png> [13] [14] [15] [16] (./S3_L_AnalogCircuit2.aux) ) 
+<2_abs_Vr1_f1V4sin_ViVo.png> [21] [22] [23
+
+] (./S3_L_AnalogCircuit2.aux) ) 
 Here is how much of TeX's memory you used:
- 938 strings out of 494934
- 12259 string characters out of 6180149
+ 974 strings out of 494934
+ 13381 string characters out of 6180149
  65717 words of memory out of 5000000
- 4275 multiletter control sequences out of 15000+600000
+ 4291 multiletter control sequences out of 15000+600000
  13680 words of font info for 62 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
  25i,5n,21p,455b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on S3_L_AnalogCircuit2.dvi (16 pages, 15348 bytes).
+Output written on S3_L_AnalogCircuit2.dvi (23 pages, 22940 bytes).
