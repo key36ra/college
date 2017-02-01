@@ -8,8 +8,7 @@
 
 \begin{document}
   
-% \tableofcontents
-% \newpage
+ \tableofcontents \newpage
   
  \section{目的}
  アナログ回路に我々が期待する機能とは、様々な演算機能を持っており、それらを回路に委託すれば答えが帰ってくることである。
@@ -39,7 +38,7 @@
    \end{enumerate}
    
    
-  \subsection{結果と考察}
+  \subsection{結果と考察} \label{sec:le_kousatu}
   レベルシフタの動作結果を図\ref{fig:1_0}に示した。この図を見ると、0～12Vの正の入力に対して、-10～10Vの一定の幅を持った正負の出力範囲が得られていることが分かる。したがってこれはレベルシフタとしての動作を反映していることを示し、さらに入力電圧に対して線形関数的に出力電圧が得られるため、以降実験の入力としてこの出力電圧を扱うに当たって、レベルシフタは非常に実験者からみても安定的で有効な回路である、ということが分かった。
   
    \begin{figure}[htbp]
@@ -55,6 +54,15 @@
  \section{リミッタ}
   \subsection{オペアンプを用いないリミッタの入出力特性}
    \subsubsection{原理}
+    
+    図\ref{fig:noamp_tokusei}にオペアンプを用いないリミッタ回路を示す。
+    
+    原理的に理想的なリミッタ回路は以下の2点の特性を示す。
+    \begin{itemize}
+    \item $v_i > 0$の時、$v_o = v_i$V。
+    \item $v_i < 0$の時、$v_o = 0$V。
+    \end{itemize}
+    
     
     \begin{figure}[htbp]
   \centering
@@ -90,6 +98,8 @@
     
   \subsection{オペアンプを用いないリミッタの入出力波形観測}
    \subsubsection{原理}
+    
+    図\ref{fig:noamp_wave}にオペアンプを用いないリミッタの波形観測回路を示す。
     
     \begin{figure}[htbp]
   \centering
@@ -140,6 +150,8 @@
   \subsection{オペアンプを用いたリミッタの入出力特性}
    \subsubsection{原理}
     
+    図\ref{fig:amp_tokusei}にオペアンプを用いたリミッタ測定回路を示す。
+    
     \begin{figure}[htbp]
   \centering
   \includegraphics[width=8cm,clip]{amp_tokusei.png}
@@ -183,6 +195,8 @@
     
   \subsection{オペアンプを用いたリミッタの入出力波形観測}
    \subsubsection{原理}
+    
+    図\ref{fig:amp_wave}にオペアンプを用いたリミッタの波形観測回路を示す。
     
     \begin{figure}[htbp]
   \centering
@@ -246,6 +260,8 @@
   \subsection{ヒステリシスコンパレータの入出力特性}
    \subsubsection{原理}
     
+    図\ref{fig:histeri_tokusei}にヒステリシスコンパレータの測定回路を示す。
+    
     \begin{figure}[htbp]
   \centering
   \includegraphics[width=8cm,clip]{histeri_tokusei.png}
@@ -281,6 +297,8 @@
     
   \subsection{ヒステリシスコンパレータの入出力波形観測}
    \subsubsection{原理}
+    
+    図\ref{fig:histeri_wave}にヒステリシスコンパレータの波形観測回路を示す。
     
     \begin{figure}[htbp]
   \centering
@@ -330,7 +348,9 @@
   \caption{ヒステリシスコンパレータの波形観測(三角波、PS=1V、振幅$V_{pp}$=6V、周波数1kHz)}
   \label{fig:histeri_1-1}
  \end{figure}
- 
+ 	
+ 	まずのノイズのない波形を見る。理想的なヒステリシスコンパレータではその入出力特性から
+ 	
  \begin{figure}[htbp]
   \centering
   \includegraphics[width=8cm,clip]{1_2_noise_before_6-1_BigScale.png}
@@ -376,6 +396,8 @@
   \subsection{絶対値回路の入出力特性}
    \subsubsection{原理}
     
+    図\ref{fig:abs_tokusei}に絶対値回路の測定回路を示す。
+    
     \begin{figure}[htbp]
   \centering
   \includegraphics[width=8cm,clip]{abs_tokusei.png}
@@ -412,6 +434,8 @@
     
   \subsection{絶対値回路の入出力波形測定}
    \subsubsection{原理}
+    
+    図\ref{fig:abs_wave}に絶対値回路の波形観測回路を示す。
     
     \begin{figure}[htbp]
   \centering
@@ -466,7 +490,19 @@
   
   %レポート課題
  \section{レポート課題} 
-  
+  \begin{itemize}
+  \item a)\ref{sec:le_kousatu}結果と考察、を参照。
+  \item b)
+  \item c)
+  \item d)
+  \item e)
+  \item f)
+  \item g)
+  \item h)
+  \item i)
+  \item j)
+  \item k)
+  \end{itemize}
   
   %参考文献
  \section{参考文献}
