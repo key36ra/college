@@ -21,7 +21,12 @@
  \section{レベルシフタ}
   \subsection{原理}
    
-   今回使用するレベルシフタの回路を図\ref{fig:levelshifter}に示す。
+   今回使用するレベルシフタの回路を図\ref{fig:levelshifter}に、また理想的なレベルシフタで実現される原理グラフを図\ref{fig:risou_levelshifter}に示す。
+   
+   またこの理想的なレベルシフタの$V_i$に対する$V_o$の挙動は以下の式で表すことが出来る。
+   \begin{equation}
+   V_o = \frac{5}{3} V_i - 10
+   \end{equation}
    
    \begin{figure}[htbp]
   \centering
@@ -29,6 +34,13 @@
   \caption{レベルシフタの設計回路}
   \label{fig:levelshifter}
  \end{figure}%
+   
+   \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{risou_levelshifter.png}
+  \caption{理想的なレベルシフタの原理グラフ}
+  \label{fig:risou_levelshifter}
+ \end{figure}
    
   \subsection{測定手順}
    ここでは、以降の実験で正電源から正負の入力を得る入力変換装置として用いるレベルシフタ回路を設計し、その挙動を検証。
@@ -59,9 +71,16 @@
     
     原理的に理想的なリミッタ回路は以下の2点の特性を示す。
     \begin{itemize}
-    \item $v_i > 0$の時、$v_o = v_i$V。
-    \item $v_i < 0$の時、$v_o = 0$V。
+    \item $V_i > 0$の時、$V_o = V_i$V。
+    \item $V_i < 0$の時、$V_o = 0$V。
     \end{itemize}
+    したがって理想的なリミッタの挙動は図\ref{fig:risou_limitter}に示すような形をとり、またそのグラフは以下の式で表される。
+    
+    \begin{eqnarray}
+    V_o &=& V_o (V_i >0) \\
+            &=& 0 (V_i < 0)
+    \end{eqnarray}
+    
     
     
     \begin{figure}[htbp]
@@ -70,6 +89,14 @@
   \caption{オペアンプを用いないリミッタの測定回路}
   \label{fig:noamp_tokusei}
  \end{figure}%
+    
+    \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{risou_limitter.png}
+  \caption{理想的なリミッタの原理グラフ}
+  \label{fig:risou_limitter}
+ \end{figure}
+    
     
    \subsubsection{測定手順}
     直流電源について、リミッタ回路を用いて整流作用の動作を確認。
@@ -260,7 +287,7 @@
   \subsection{ヒステリシスコンパレータの入出力特性}
    \subsubsection{原理}
     
-    図\ref{fig:histeri_tokusei}にヒステリシスコンパレータの測定回路を示す。
+    図\ref{fig:histeri_tokusei}にヒステリシスコンパレータの測定回路を、また理想的なヒステリシスコンパレータの原理グラフを図\ref{fig:risou_histeri}に示す。ただし図\ref{fig:risou_histeri}中に記している電圧値及び電流値は便宜上、仮に設定したものである。
     
     \begin{figure}[htbp]
   \centering
@@ -268,6 +295,13 @@
   \caption{ヒステリシスコンパレータの測定回路}
   \label{fig:histeri_tokusei}
  \end{figure}%
+    
+    \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{risou_histeri.png}
+  \caption{理想的なヒステリシスコンパレータの原理グラフ}
+  \label{fig:risou_histeri}
+ \end{figure}
     
    \subsubsection{測定手順}
     PS出力電圧$V_{th}$、コンパレータ入力電圧$V_i$に対する、ヒステリシスコンパレータの特性を測定。
@@ -308,6 +342,7 @@
  \end{figure}%
     
    \subsubsection{測定手順}
+    
     図\ref{fig:histeri_wave}の回路を設計。その後、以下の基本波形・模擬ノイズ波形観測について測定。
     
     基本波形について。
@@ -396,7 +431,7 @@
   \subsection{絶対値回路の入出力特性}
    \subsubsection{原理}
     
-    図\ref{fig:abs_tokusei}に絶対値回路の測定回路を示す。
+    図\ref{fig:abs_tokusei}に絶対値回路の測定回路を、また基準電圧が0Vと1Vの理想的な絶対値回路の原理グラフを図\ref{fig:risou_absr0}、\ref{fig:risou_absr1}に示す。
     
     \begin{figure}[htbp]
   \centering
@@ -404,6 +439,22 @@
   \caption{絶対値回路の測定回路}
   \label{fig:abs_tokusei}
  \end{figure}%
+    
+    \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{risou_absr0.png}
+  \caption{基準電圧0Vの時の理想的な絶対値回路の原理グラフ}
+  \label{fig:risou_absr0}
+ \end{figure}
+    
+    \begin{figure}[htbp]
+  \centering
+  \includegraphics[width=8cm,clip]{risou_absr1.png}
+  \caption{基準電圧1Vの時の理想的な絶対値回路の原理グラフ}
+  \label{fig:risou_absr1}
+ \end{figure}
+    
+    
     
    \subsubsection{測定手順}
     絶対値回路について、直流電源に対して全波整流の挙動を測定。
@@ -491,7 +542,7 @@
   %レポート課題
  \section{レポート課題} 
   \begin{itemize}
-  \item a)\ref{sec:le_kousatu}結果と考察、を参照。
+  \item a)レベルシフタの\ref{sec:le_kousatu}結果と考察、を参照。
   \item b)
   \item c)
   \item d)
